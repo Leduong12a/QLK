@@ -1,3 +1,5 @@
+var questionMain = null; 
+
 const startButton = document.getElementById("start_button");
 const gifLanding = document.querySelector(".gif");
 const questionLanding = document.querySelector(".question");
@@ -16,7 +18,7 @@ startButton.addEventListener("click", () => {
 
     if (input== ""){
         gifLanding.src = "https://media.giphy.com/media/VB3cK9oA48BbQWcObd/giphy.gif";
-        questionLanding.innerHTML = "Please give  me your name before you start!"
+        questionLanding.innerHTML = "Tên cậu là gì!"
     }
     else{
         document.head.innerHTML = "<meta charset='UTF-8'>"+
@@ -24,7 +26,7 @@ startButton.addEventListener("click", () => {
         "<title>Do You Love Me?</title>"+
         "<link rel='stylesheet' href='styleMain.css'/>"
 
-        document.body.innerHTML = "<div class='wrapper'><h2 class='question'> Phanh có muốn đi cháy phố với QD không?</h2>"+
+        document.body.innerHTML = "<div class='wrapper'><h2 class='question'> "+input+" có muốn đi cháy phố với QD không?</h2>"+
         "<img class='gif' alt='gif' src='https://media.giphy.com/media/0kDdAFAELmvvFNUKim/giphy.gif'/>"+
         "<div class='btn-group'><button class='yes-btn'>Yes</button>"+
         "<button class='no-btn'>No</button></div></div>"
@@ -40,7 +42,7 @@ startButton.addEventListener("click", () => {
 });
 
 function yesButtonListener(){
-    document.body.innerHTML = "<div class='wrapper'><h2 class='question'>HaHa! Thế qua đón em đi cháp phố nha ❤️, !</h2>"+
+    document.body.innerHTML = "<div class='wrapper'><h2 class='question'>HaHa! Thế qua đón em đi cháy phố nha ❤️, !</h2>"+
     "<img class='gif' alt='gif' src='https://media.giphy.com/media/fHGl1MDMNkO6fOaFDF/giphy.gif'/></div><script src='scriptMain.js'></script>"
     gifMain.src = "https://media.giphy.com/media/fHGl1MDMNkO6fOaFDF/giphy.gif";
 }
@@ -52,11 +54,11 @@ function noButtonListener(){
     }
     else if (count >= 5 && count < 10){
         gifMain.src ="https://media.giphy.com/media/QuCslOrnS649PSCnn7/giphy.gif";
-        questionMain.innerHTML = "Stop playing with me! Do you love me or not?!";
+        questionMain.innerHTML = "Đừng có mà ấn no nữa..";
     }
     else{
         gifMain.src ="https://media.giphy.com/media/8OPf6xrtXi3QEcu5h9/giphy.gif";
-        questionMain.innerHTML = "JUST ANSWER IT! DO YOU LOVE ME?!";
+        questionMain.innerHTML = "Trả lời nhanh đi cái đồ kia!";
     }
     const noButtonRect = noButton.getBoundingClientRect();
     const maxX = window.innerWidth - noButtonRect.width;
