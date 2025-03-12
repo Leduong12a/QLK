@@ -67,3 +67,22 @@ button{
     background: #e94d58;
     color: white;
 }
+@media (max-width: 768px) {
+    .gif {
+        height: 60%;
+        width: 60%;
+    }
+
+    input[type=text] {
+        width: 80%;
+        max-width: 300px;
+        font-size: 1em;
+    }
+
+    button {
+        width: 120px;
+        height: 45px;
+        font-size: 1em;
+        margin-top: 150px;
+    }
+}
