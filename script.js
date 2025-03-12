@@ -24,7 +24,7 @@ startButton.addEventListener("click", () => {
         "<title>Do You Love Me?</title>"+
         "<link rel='stylesheet' href='styleMain.css'/>"
 
-        document.body.innerHTML = "<div class='wrapper'><h2 class='question'>Hello "+input+ "! Will you go out with me?</h2>"+
+        document.body.innerHTML = "<div class='wrapper'><h2 class='question'> Phanh có muốn đi cháy phố với QD không?</h2>"+
         "<img class='gif' alt='gif' src='https://media.giphy.com/media/0kDdAFAELmvvFNUKim/giphy.gif'/>"+
         "<div class='btn-group'><button class='yes-btn'>Yes</button>"+
         "<button class='no-btn'>No</button></div></div>"
@@ -40,7 +40,7 @@ startButton.addEventListener("click", () => {
 });
 
 function yesButtonListener(){
-    document.body.innerHTML = "<div class='wrapper'><h2 class='question'>Yay! Thank you for loving me ❤️, "+input+ "!</h2>"+
+    document.body.innerHTML = "<div class='wrapper'><h2 class='question'>HaHa! Thế qua đón em đi cháp phố nha ❤️, !</h2>"+
     "<img class='gif' alt='gif' src='https://media.giphy.com/media/fHGl1MDMNkO6fOaFDF/giphy.gif'/></div><script src='scriptMain.js'></script>"
     gifMain.src = "https://media.giphy.com/media/fHGl1MDMNkO6fOaFDF/giphy.gif";
 }
@@ -48,7 +48,7 @@ function yesButtonListener(){
 function noButtonListener(){
     if (count < 5) {
         gifMain.src ="https://media.giphy.com/media/hbOgjMOUfLdWV2Ty1j/giphy.gif";
-        questionMain.innerHTML = "You don't love me?";
+        questionMain.innerHTML = "Cậu không muốn đi với QD sao?";
     }
     else if (count >= 5 && count < 10){
         gifMain.src ="https://media.giphy.com/media/QuCslOrnS649PSCnn7/giphy.gif";
