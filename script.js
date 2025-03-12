@@ -23,7 +23,7 @@ startButton.addEventListener("click", () => {
     else{
         document.head.innerHTML = "<meta charset='UTF-8'>"+
         "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"+
-        "<title>Do You Love Me?</title>"+
+        "<title>Thư mời cháy phố...</title>"+
         "<link rel='stylesheet' href='styleMain.css'/>"
 
         document.body.innerHTML = "<div class='wrapper'><h2 class='question'> "+input+" có muốn đi cháy phố với QD không?</h2>"+
